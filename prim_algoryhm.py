@@ -74,7 +74,7 @@ def weights_dic():
     return path_weights
 
 
-def calc_min_path(nodes, weights_matrix, inverses_weights):
+def calc_min_path_prim(nodes, weights_matrix, inverses_weights):
 
     nodes_number = len(nodes)
 
@@ -138,7 +138,7 @@ def run():
     # calc_min_path(nodes, test, inv_test)
 
     (nodes, weights, inv_weights) = weights_ways()
-    calc_min_path(nodes, weights, inv_weights)
+    calc_min_path_prim(nodes, weights, inv_weights)
 
 
 if __name__=='__main__':
